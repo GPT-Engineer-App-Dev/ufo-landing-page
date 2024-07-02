@@ -2,7 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Grid } from "@/components/ui/grid";
 
 const Index = () => {
   return (
@@ -18,7 +17,7 @@ const Index = () => {
       {/* Sightings Section */}
       <section className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Recent Sightings</h2>
-        <Grid className="gap-8">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Example sightings */}
           <Card>
             <CardHeader>
@@ -39,13 +38,13 @@ const Index = () => {
             </CardContent>
           </Card>
           {/* Add more sightings as needed */}
-        </Grid>
+        </div>
       </section>
 
       {/* Research Section */}
       <section className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Latest Research</h2>
-        <Grid className="gap-8">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Example research articles */}
           <Card>
             <CardHeader>
@@ -66,7 +65,7 @@ const Index = () => {
             </CardContent>
           </Card>
           {/* Add more research articles as needed */}
-        </Grid>
+        </div>
       </section>
 
       {/* Contact Section */}
